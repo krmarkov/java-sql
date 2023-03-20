@@ -1,0 +1,8 @@
+<div>
+	<article class="card">
+		<img onclick=" document.getElementById('bigPhoto').src='images/{{ include.imagename }}'; document.getElementById('detailInfo').innerHTML='{{include.imagetext}}';" class = "product" src="images/{{ include.imagename }}" alt="{{include.productname}}">
+		<footer>
+			<p>{{include.imagetext}}</p>
+		</footer>
+	</article>
+</div>
