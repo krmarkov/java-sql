@@ -1,8 +1,89 @@
----
-layout: default
----
-			<div class="flex one two-500 three-1000 center">
-				{% include combined.html page="women-t-shirts.html" imagename="women-t-shirt-white.jpg" text="Тениски" products="Тениски" %}
-				{% include combined.html page="women-pants.html" imagename="women-pants-brown.jpg" text="Панталони" products="Панталони" %}
-				{% include combined.html page="women-dresses.html" imagename="red-dress.jpg" text="Рокли" products="Рокли" %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Магазин</title>
+		<link rel="icon" type="image/png" href="images/favicon.png">
+		<meta name="viewport" content="width=device-width", initial-scale="1">
+		<link rel="stylesheet" href="css/picnic.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+
+	<body>
+		<div id = "container">
+			<div id="search" class="flex center">
+				<a id="site-name" href="index.html" id="mainmenu"><h1>Bend the Trend</h1></a>
+				<div class="search-bar">
+					<input type="text" placeholder="Search..">
+				</div>
 			</div>
+
+			<div id="nav" class="flex four center">
+				<div class="dropdown">
+				  	<a class="button glow-button" href="men.html">Мъже</a>
+				  	<div class="dropdown-content">
+					  	<a href="men-t-shirts.html">Тениски</a>
+					  	<a href="men-pants.html">Панталони</a>
+					  	<a href="men-sweatshirts.html">Суичъри</a>
+					</div>
+				</div>
+				
+				<div class="dropdown">
+					<a class="button glow-button" href="women.html">Жени</a>
+				  	<div class="dropdown-content">
+					  	<a href="women-t-shirts.html">Тениски</a>
+					  	<a href="women-pants.html">Панталони</a>
+					  	<a href="women-dresses.html">Рокли</a>
+					</div>
+				</div>
+
+				<div class="dropdown">
+					<a class="button glow-button" href="kids.html">Деца</a>
+				  	<div class="dropdown-content">
+					  	<a href="kids-t-shirts.html">Тениски</a>
+					  	<a href="kids-pants.html">Панталони</a>
+					  	<a href="kids-sweatshirts.html">Суичъри</a>
+					</div>
+				</div>
+
+				<div class="dropdown">
+					<a class="button glow-button" href="accessories.html">Аксесоари</a>
+				  	<div class="dropdown-content">
+					  	<a href="accessories-watches.html">Часовници</a>
+					  	<a href="accessories-belts.html">Колани</a>
+					  	<a href="accessories-purses.html">Чанти</a>
+					</div>
+				</div>
+			</div>
+
+						<div class="flex one two-500 three-1000 center">
+				<div>
+	<article class="card">
+		<a href="women-t-shirts.html"><img class = "product" src="images/women-t-shirt-white.jpg" alt="Тениски"></a>
+		<footer>
+			<p>Тениски</p>
+		</footer>
+	</article>
+</div>	
+				<div>
+	<article class="card">
+		<a href="women-pants.html"><img class = "product" src="images/women-pants-brown.jpg" alt="Панталони"></a>
+		<footer>
+			<p>Панталони</p>
+		</footer>
+	</article>
+</div>	
+				<div>
+	<article class="card">
+		<a href="women-dresses.html"><img class = "product" src="images/red-dress.jpg" alt="Рокли"></a>
+		<footer>
+			<p>Рокли</p>
+		</footer>
+	</article>
+</div>	
+			</div>
+
+
+			
+		</div>
+	</body>
+</html>	

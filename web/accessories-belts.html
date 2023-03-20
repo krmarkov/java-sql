@@ -1,11 +1,89 @@
----
-layout: default
----
-			<div  class="flex two center">
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Магазин</title>
+		<link rel="icon" type="image/png" href="images/favicon.png">
+		<meta name="viewport" content="width=device-width", initial-scale="1">
+		<link rel="stylesheet" href="css/picnic.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+
+	<body>
+		<div id = "container">
+			<div id="search" class="flex center">
+				<a id="site-name" href="index.html" id="mainmenu"><h1>Bend the Trend</h1></a>
+				<div class="search-bar">
+					<input type="text" placeholder="Search..">
+				</div>
+			</div>
+
+			<div id="nav" class="flex four center">
+				<div class="dropdown">
+				  	<a class="button glow-button" href="men.html">Мъже</a>
+				  	<div class="dropdown-content">
+					  	<a href="men-t-shirts.html">Тениски</a>
+					  	<a href="men-pants.html">Панталони</a>
+					  	<a href="men-sweatshirts.html">Суичъри</a>
+					</div>
+				</div>
+				
+				<div class="dropdown">
+					<a class="button glow-button" href="women.html">Жени</a>
+				  	<div class="dropdown-content">
+					  	<a href="women-t-shirts.html">Тениски</a>
+					  	<a href="women-pants.html">Панталони</a>
+					  	<a href="women-dresses.html">Рокли</a>
+					</div>
+				</div>
+
+				<div class="dropdown">
+					<a class="button glow-button" href="kids.html">Деца</a>
+				  	<div class="dropdown-content">
+					  	<a href="kids-t-shirts.html">Тениски</a>
+					  	<a href="kids-pants.html">Панталони</a>
+					  	<a href="kids-sweatshirts.html">Суичъри</a>
+					</div>
+				</div>
+
+				<div class="dropdown">
+					<a class="button glow-button" href="accessories.html">Аксесоари</a>
+				  	<div class="dropdown-content">
+					  	<a href="accessories-watches.html">Часовници</a>
+					  	<a href="accessories-belts.html">Колани</a>
+					  	<a href="accessories-purses.html">Чанти</a>
+					</div>
+				</div>
+			</div>
+
+						<div  class="flex two center">
 				<div class="flex one two-500 three-1000 center">
-					{% include image.html imagename="belt-brown.jpg" imagetext = "Кафяв колан<br>34.99лв" productname = "Кафяв колан" %}
-					{% include image.html imagename="belt-black.jpg" imagetext = "Черен колан<br>29.99лв" productname = "Черен колан" %}
-					{% include image.html imagename="belt-blue.jpg" imagetext = "Син колан<br>24.99лв" productname = "Син колан" %}
+					<div>
+	<article class="card">
+		<img onclick=" document.getElementById('bigPhoto').src='images/belt-brown.jpg'; document.getElementById('detailInfo').innerHTML='Кафяв колан<br>34.99лв';" class = "product" src="images/belt-brown.jpg" alt="Кафяв колан">
+		<footer>
+			<p>Кафяв колан<br>34.99лв</p>
+		</footer>
+	</article>
+</div>
+
+					<div>
+	<article class="card">
+		<img onclick=" document.getElementById('bigPhoto').src='images/belt-black.jpg'; document.getElementById('detailInfo').innerHTML='Черен колан<br>29.99лв';" class = "product" src="images/belt-black.jpg" alt="Черен колан">
+		<footer>
+			<p>Черен колан<br>29.99лв</p>
+		</footer>
+	</article>
+</div>
+
+					<div>
+	<article class="card">
+		<img onclick=" document.getElementById('bigPhoto').src='images/belt-blue.jpg'; document.getElementById('detailInfo').innerHTML='Син колан<br>24.99лв';" class = "product" src="images/belt-blue.jpg" alt="Син колан">
+		<footer>
+			<p>Син колан<br>24.99лв</p>
+		</footer>
+	</article>
+</div>
+
 				</div>
 				
 				<div id="product-container">
@@ -13,3 +91,9 @@ layout: default
 						<p id="detailInfo">Детайли за продукта <br> Натиснете върху желания продукт</p>
 				</div>	
 			</div>
+
+
+			
+		</div>
+	</body>
+</html>	
