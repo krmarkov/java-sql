@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Login</title>
+		<title>Register</title>
 		<link rel="icon" type="image/png" href="images/favicon.png">
                 <meta charset="UTF-8">
 		<link rel="stylesheet" href="css/picnic.css">
@@ -9,11 +9,13 @@
 	</head>
         
         <body>
-                <form method="get" action="LoginServlet">
+                <form method="get" action="RegisterServlet">
                     <label for="username">Username:</label><br>
                     <input type="text" id="username" name="username"><br>
                     <label for="password">Password:</label><br>
                     <input type="password" id="password" name="password">
+                    <label for="email">Email:</label><br>
+                    <input type="text" id="email" name="email">
                     <input type="submit" value="Submit">
                 </form> 
 	</body>
